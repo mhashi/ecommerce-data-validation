@@ -9,14 +9,24 @@ This Python script validates an e-commerce dataset by identifying inconsistencie
 
 The script generates a **log file** summarizing all detected issues, which is stored on the user's desktop in Excel format.
 
+## How to Run the Script
+
+Download the validation1.py Python script.
+
+Download the Excel dataset file.
+
+Set the File Path
+In the validation1.py script, locate the file_path variable and update it with the full path to your dataset file on your machine.
+
+Open the terminal or command prompt and navigate to the folder containing validation1.py, then run:
+
+python validation1.py
+
+Check the Output
+After running the script, a log file named data_validation_log.xlsx will be created in the same directory (or a specified output path). This file contains all detected validation issues.
+
 ## Prerequisites
 Before running the script, ensure you have the following installed:
 - Python 3.x
 - Pandas (`pip install pandas`)
 - OpenPyXL (`pip install openpyxl`)
-
-## Setup
-1. Place the dataset (`ecommerce-dataset-final.csv`) in a location accessible by the script.
-2. Update the file path inside the script to match the dataset location:
-   ```python
-   file_path = r"C:\Users\mhash\OneDrive\Desktop\ecommerce-dataset-final.csv"
